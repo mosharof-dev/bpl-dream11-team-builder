@@ -1,15 +1,29 @@
 
 
+import { Suspense } from 'react'
 import './App.css'
+import Banner from './Components/HomePage/Banner/Banner'
+import Players from './Components/HomePage/Players/Players'
 import Navbar from './Components/Navbar/Navbar'
 
+const FetchPlayer =  async() => {
+const res = await fetch("/public/playerData.json")
+return res.json();
+}
 function App() {
- 
-
+ const playerPromise = FetchPlayer()
   return (
     <>
     {/* Navbar Section */}
-    <Navbar/>
+    <Navbar></Navbar>
+
+    {/* Banner Section */}
+    <Banner></Banner>
+
+    {/* Player data */}
+   <Suspense>
+     <Players playerPromise={playerPromise}></Players>
+   </Suspense>
      
     
 

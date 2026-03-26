@@ -3,8 +3,8 @@ import Dollar from '../../assets/dollar 1.png'
 import LogoNavbar from '../../assets/logo.png'
 const Navbar = () => {
     return (
-<div>
-<div className="navbar bg-base-100 shadow-sm">
+<div >
+<div className="navbar bg-base-100 shadow-sm container mx-auto">
   <div className="flex-1">
     <img src={LogoNavbar} alt=""/>
   </div>
