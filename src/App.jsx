@@ -1,14 +1,16 @@
-import { useState } from 'react'
+
 
 import './App.css'
+import Navbar from './Components/Navbar/Navbar'
 
 function App() {
-  const [count, setCount] = useState(0)
+ 
 
   return (
     <>
-
-     <button className='btn' onClick={() => setCount( count +1)}>Count is {count}</button>
+    {/* Navbar Section */}
+    <Navbar/>
+     
     
 
     </>
