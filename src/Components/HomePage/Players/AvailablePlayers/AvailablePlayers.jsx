@@ -2,10 +2,15 @@ import React from 'react';
 
 import Card from '../../../UI/Card';
 
-const AvailablePlayers = ({players}) => {
+const AvailablePlayers = ({players , setCoin, coin}) => {
     // console.log(players);
     return (
-<Card players={players}></Card>
+       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3'>
+        {players.map((players, index ) =>{
+            return  (<Card players={players} key={index} setCoin={setCoin} coin={coin}></Card>)
+        })}
+       
+       </div>
     );
 };
 
