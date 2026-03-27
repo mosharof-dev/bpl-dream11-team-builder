@@ -21,7 +21,7 @@ function App() {
     <Banner></Banner>
 
     {/* Player data */}
-   <Suspense>
+   <Suspense fallback={<div className='container mx-auto flex justify-center align-middle mt-[5%] '><span className="loading loading-bars loading-xl"></span></div>}>
      <Players playerPromise={playerPromise}></Players>
    </Suspense>
      

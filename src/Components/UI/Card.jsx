@@ -6,8 +6,8 @@ const Card = ({players}) => {
             <div>
   <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3'>
       {
-        players.map(player => {
-          return <div className="card bg-base-100 shadow-md rounded-xl overflow-hidden">
+        players.map((player, index) => {
+          return <div key={index} className="card bg-base-100 shadow-md rounded-xl overflow-hidden">
   
   {/* Image */}
        <figure><img src={player.playerPhoto} alt="" /></figure>
