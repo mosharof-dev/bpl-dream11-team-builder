@@ -34,7 +34,7 @@ return (
 
 
       
-        <div className="card bg-base-100 shadow-md rounded-xl overflow-hidden">
+<div className="card bg-base-100 shadow-md rounded-xl overflow-hidden">
   
   {/* Image */}
        <figure><img src={players.playerPhoto} alt="" /></figure>

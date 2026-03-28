@@ -13,13 +13,14 @@ const res = await fetch("/public/playerData.json")
 return res.json();
 }
 
+ const playerPromise = FetchPlayer()
 
 function App() {
 
   //  === Player Price ===
-const [coin, setCoin] = useState(5000)
+const [coin, setCoin] = useState(10000)
 
- const playerPromise = FetchPlayer()
+
   return (
     <>
     {/* Navbar Section */}
