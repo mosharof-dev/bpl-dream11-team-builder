@@ -29,7 +29,7 @@ const Footer = () => {
                 {/* 2. Main Footer Content */}
                 <div className="max-w-7xl mx-auto">
                     {/* Logo */}
-                    <div className="flex justify-center mb-16 pt-10">
+                    <div className="flex justify-center mb-10 pt-26 md:pt-10">
                         <img src={FooterLogo} alt="Cricket Logo" className="w-32" />
                     </div>
 

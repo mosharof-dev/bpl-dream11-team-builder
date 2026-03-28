@@ -5,8 +5,8 @@ import Card from '../../../UI/Card';
 const AvailablePlayers = ({players, setCoin, coin, selectedPlayers, setSelectedPlayers, displayLimit, setDisplayLimit}) => {
     
     return (
-        <div> 
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 '>
+        <div className='container mx-auto mt-6 px-4 md:px-0 mb-16 md:mb-24'> 
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 '>
                 
                 {players.slice(0, displayLimit).map((player, index) => {
                     return (

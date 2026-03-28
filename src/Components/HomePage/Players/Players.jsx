@@ -12,10 +12,10 @@ const [selectedPlayers, setSelectedPlayers] = useState([])
 // console.log(selectedButton);
 const [displayLimit, setDisplayLimit] = useState(12);
     return (
-<div className='container mx-auto my-12'>
+<div className='container mx-auto mt-6 px-4 md:px-0 mb-16 md:mb-24'>
 <div className='flex justify-between items-center  mb-8'>
 { selectedButton === "Available" ? <h2 className='font-bold text-2xl'>Available Players</h2> :
- <h2 className='font-bold text-2xl'>Selected Player ({selectedPlayers.length}/{players.length})</h2>}
+ <h2 className='font-bold text-xl md:text-2xl'>Selected Player ({selectedPlayers.length}/{players.length})</h2>}
 
 <div className='flex'>
 <button onClick={() => setSelectedButton("Available")} className={`btn ${selectedButton === "Available" ? "bg-[#E7FE29]" : ""}  rounded-none rounded-l-xl`}>Available</button>
