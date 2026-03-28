@@ -10,6 +10,7 @@ const [selectedButton, setSelectedButton] = useState("Available")
 
 const [selectedPlayers, setSelectedPlayers] = useState([])
 // console.log(selectedButton);
+const [displayLimit, setDisplayLimit] = useState(12);
     return (
 <div className='container mx-auto my-12'>
 <div className='flex justify-between items-center  mb-4'>
@@ -21,8 +22,13 @@ const [selectedPlayers, setSelectedPlayers] = useState([])
 <button onClick={() => setSelectedButton("Selected")} className={` btn rounded-l-none rounded-r-xl  ${selectedButton === "Selected" ? "bg-[#E7FE29]" : ""}`}>Selected <span>({selectedPlayers.length})</span></button>
 </div>
 </div>
-{ selectedButton === "Available" ?<AvailablePlayers players={players} setCoin={setCoin} coin={coin}
- selectedPlayers={selectedPlayers} setSelectedPlayers={setSelectedPlayers}
+{ selectedButton === "Available" ?<AvailablePlayers players={players} setCoin={setCoin}
+ coin={coin}
+ selectedPlayers={selectedPlayers} 
+ setSelectedPlayers={setSelectedPlayers}
+ displayLimit={displayLimit}
+ setDisplayLimit={setDisplayLimit}
+
 ></AvailablePlayers> : <SelectedPlayers selectedPlayers={selectedPlayers} setSelectedPlayers={setSelectedPlayers} setCoin={setCoin} coin={coin}></SelectedPlayers>}
 </div>
     );
