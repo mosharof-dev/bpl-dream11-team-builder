@@ -16,7 +16,7 @@ return res.json();
 function App() {
 
   //  === Player Price ===
-const [coin, setCoin] = useState("5000")
+const [coin, setCoin] = useState(5000)
 
  const playerPromise = FetchPlayer()
   return (
@@ -25,7 +25,7 @@ const [coin, setCoin] = useState("5000")
     <Navbar  coin={coin}></Navbar>
 
     {/* Banner Section */}
-     <Banner></Banner>
+     <Banner coin={coin} setCoin={setCoin}></Banner>
 
     {/* Player data */}
    <Suspense fallback={<div className='container mx-auto flex justify-center align-middle mt-[10%] '><span className="loading loading-bars loading-xl"></span></div>}>

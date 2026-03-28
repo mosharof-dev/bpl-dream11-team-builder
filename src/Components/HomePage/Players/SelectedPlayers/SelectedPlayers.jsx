@@ -12,7 +12,7 @@ const deletedPlayer = selectedPlayers.filter((player) => player.playerName !== p
 // console.log(deletedPlayer, "deletedPlayer");
 setSelectedPlayers(deletedPlayer)
 setCoin(coin + players.price)
-toast.error('players is deleted')
+toast.error(`${players.playerName} is removed from your team.`)
 }
 return (
 <div className='space-y-4'>
