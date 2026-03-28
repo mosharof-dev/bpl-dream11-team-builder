@@ -21,7 +21,7 @@ toast.error(`${players.playerName} is removed from your team.`)
 return (
 <div className='space-y-4'>
 {selectedPlayers.length === 0 ? 
-<div className='flex flex-col items-center justify-center text-center'>
+<div className='flex flex-col items-center justify-center text-center mt-16'>
   
   <div className='w-full  p-10 bg-white border border-dashed border-gray-300 rounded-3xl shadow-lg'>
     
