@@ -45,7 +45,7 @@ const claimFreeCredit = () =>{
 
   </div>
 </div>
-
+</div>
        
     );
 };

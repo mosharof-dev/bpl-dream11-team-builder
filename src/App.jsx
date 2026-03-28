@@ -9,11 +9,11 @@ import { ToastContainer } from 'react-toastify'
 import Footer from './Components/Footer/Footer'
 
 const FetchPlayer =  async() => {
-const res = await fetch("/public/playerData.json")
+const res = await fetch("/playerData.json")
 return res.json();
 }
 
- const playerPromise = FetchPlayer()
+const playerPromise = FetchPlayer()
 
 function App() {
 
