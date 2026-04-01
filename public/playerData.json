@@ -6,7 +6,7 @@
     "rating": 9.5,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm medium",
-    "price": 150000,
+    "price": 1500,
     "playerPhoto": "https://i.ibb.co.com/7N8cDdCk/images.webp"
   },
   {
@@ -117,7 +117,7 @@
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
     "price": 12500,
-    "playerPhoto": "https://i.ibb.co.com/HTXgSTtz/glenn-maxwell-signs-melbourne-stars-27-01-2026.jpg"
+    "playerPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCZXJHQ5AXufv4k-GTYbSC_7-lJA3ZxCvbFQ&s"
   },
   {
     "playerName": "Quinton de Kock",
@@ -127,7 +127,7 @@
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "None",
     "price": 1150,
-    "playerPhoto": "https://i.ibb.co.com/cSh5h7Mq/Quinton-de-Kock.png"
+    "playerPhoto": "https://i.cdn.newsbytesapp.com/images/l67220231003000456.jpeg"
   },
   {
     "playerName": "Trent Boult",
