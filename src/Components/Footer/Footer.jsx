@@ -9,7 +9,7 @@ const Footer = () => {
                 
                 <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[90%] max-w-6xl z-20">
                     <div className="bg-white/10 backdrop-blur-xl border border-white/20 p-4 rounded-3xl">
-                        <div className="bg-white text-black rounded-2xl py-16 px-6 text-center shadow-2xl bg-gradient-to-tr from-blue-50 via-white to-orange-50">
+                        <div className="bg-white text-black rounded-2xl py-16 px-6 text-center shadow-2xl bg-linear-to-tr from-blue-50 via-white to-orange-50">
                             <h2 className="text-3xl font-bold mb-3">Subscribe to our Newsletter</h2>
                             <p className="text-gray-500 mb-6">Get the latest updates and news right in your inbox!</p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -18,7 +18,7 @@ const Footer = () => {
                                     placeholder="Enter your email" 
                                     className="border border-gray-300 rounded-xl px-4 py-3 w-full max-w-md focus:outline-none focus:ring-2 focus:ring-orange-300"
                                 />
-                                <button className="bg-gradient-to-r from-pink-400 to-yellow-500 text-black font-bold px-8 py-3 rounded-xl hover:shadow-lg transition-all duration-300 w-full sm:w-auto">
+                                <button className="bg-linear-to-r from-pink-400 to-yellow-500 text-black font-bold px-8 py-3 rounded-xl hover:shadow-lg transition-all duration-300 w-full sm:w-auto">
                                     Subscribe
                                 </button>
                             </div>
@@ -27,9 +27,9 @@ const Footer = () => {
                 </div>
 
                 {/* 2. Main Footer Content */}
-                <div className="max-w-7xl mx-auto">
+                <div className="container mx-auto px-8">
                     {/* Logo */}
-                    <div className="flex justify-center mb-10 pt-26 md:pt-10">
+                    <div className="flex justify-center mb-10 pt-26 md:pt-10 ">
                         <img src={FooterLogo} alt="Cricket Logo" className="w-32" />
                     </div>
 
@@ -64,7 +64,7 @@ const Footer = () => {
                                     placeholder="Enter your email" 
                                     className="bg-white text-black px-4 py-2 w-full focus:outline-none rounded-l-xl"
                                 />
-                                <button className="bg-gradient-to-r from-pink-400 to-yellow-500 text-black font-bold px-4 py-2 rounded-r-xl whitespace-nowrap">
+                                <button className="bg-linear-to-r from-pink-400 to-yellow-500 text-black font-bold px-4 py-2 rounded-r-xl whitespace-nowrap">
                                     Subscribe
                                 </button>
                             </div>

@@ -16,7 +16,7 @@ const claimFreeCredit = () =>{
  }
 }
     return (
-<div className='container mx-auto mt-6 px-4 md:px-0 mb-16 md:mb-24'>
+<div className='container mx-auto mt-6 px-4 md:px-8 mb-16 md:mb-24'>
 <div className='container mx-auto mt-6 rounded-2xl bg-cover bg-center bg-no-repeat bg-black px-4 md:px-0'
      style={{ backgroundImage: `url(${BannerBg})` }}>
   
